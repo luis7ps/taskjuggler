@@ -47,6 +47,7 @@ account cost "Project Cost" {
   account wFront "Web Front-End"
   account mFront "Mobile Front-End"
   account back "Back-End"
+  account cloud "Cloud Deployment"
 }
 account rev "Payments"
 # The Profit&Loss analysis should be rev - cost accounts.
@@ -223,7 +224,8 @@ task WMGame "Web & Mobile Game" {
 }
 
 task tCloudSupport "Cloud Deployment Support" {
-  chargeset back
+  purge chargeset
+  chargeset cloud
   responsible dev4
   depends WMGame.tback
   task tCloudEval "Cloud Platform Evaluation" {
