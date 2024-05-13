@@ -89,7 +89,7 @@ task WMGame "Web & Mobile Game" {
   charge 60 perday
   responsible boss
 
-  journalentry now "Esta es una nueva incidencia/anotación" {
+  journalentry 2024-05-14 "Esta es una nueva incidencia/anotación" {
     author boss
     alert yellow
     summary "Se ha encontrado un problema en la tarea WMGame."
