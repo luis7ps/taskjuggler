@@ -200,7 +200,7 @@ task WMGame "Web & Mobile Game" {
   }
 
   task tMobileF "Mobile Front End" {
-  chargeset wFront
+  chargeset mFront
   responsible dev4
   depends WMGame.twebF
   task tMobileGUI "Mobile GUI Design" {
