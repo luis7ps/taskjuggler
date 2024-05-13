@@ -209,7 +209,6 @@ task WMGame "Web & Mobile Game" {
   task tMobileGUI "Mobile GUI Design" {
     effort 8d
     allocate dev4
-    depends WMGame.tmobileF.tGUId
   }
   task tMobileFEc "Mobile Front End Construction" {
     effort 12d
