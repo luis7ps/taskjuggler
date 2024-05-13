@@ -201,6 +201,7 @@ task WMGame "Web & Mobile Game" {
   }
 
   task tMobileF "Mobile Front End" {
+  purge chargeset
   chargeset mFront
   responsible dev4
   depends WMGame.twebF
