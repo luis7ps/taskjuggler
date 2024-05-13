@@ -281,6 +281,11 @@ textreport frame "" {
     center '<[report id="overview"]>'
   }
 
+  textreport overvinit "OverviewInitialPlan" {
+    formats html
+    center '<[report id="initialPlan"]>'
+  }
+
   textreport "Status" {
     formats html
     center -8<-
