@@ -316,18 +316,19 @@ textreport frame "" {
   }
 }
 
-textreport initialPlan "Planificación Inicial del Proyecto" {
-  formats html
-  headline "Planificación Inicial del Proyecto"
+taskreport initialPlan "Initial plan" {
+  scenarios plan
+  headline "Initial Project Plan"
   columns bsi { title 'WBS' },
           name, start, end, effort, cost,
           revenue, chart { ${TaskTip} }
-  timeformat "%Y-%m-%d"
+  # For this report we like to have the abbreviated weekday in front
+  # of the date. %a is the tag for this.
+  timeformat "%a %Y-%m-%d"
   loadunit days
   hideresource @all
-  scenarios plan
   balance cost rev
-  caption 'Todos los valores de esfuerzo están en días hombre.'
+  caption 'All effort values are in man days.'
 }
 
 # A traditional Gantt chart with a project overview.
